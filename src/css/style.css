@@ -1,0 +1,136 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #06132f;
+  color: #333;
+}
+
+button {
+  background-color: #136775;
+  color: #afafaf;
+}
+
+.menu {
+  background-color: #0b2252;
+}
+
+.menu ul{
+  list-style: none;
+  magrin: 0;
+  padding: 0;
+}
+
+.menu li{
+  display: inline-block;
+  position: relative;
+}
+
+.menu .submenu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #172644;
+  color: #afafaf;
+}
+
+/*.menu li.submenu:hover > .submenu{
+  display: block;
+}
+*/
+
+/* Container de produtos */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card do produto */
+.card {
+  background: #0b2252;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 190px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #aaaaaa;
+}
+
+.card p {
+  color: #8f8e8e;
+  font-size: 0.9rem;
+}
+
+/* Modal (overlay) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.modal-content h3 {
+  margin: 15px 0;
+}
+
+.modal-content p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+}
