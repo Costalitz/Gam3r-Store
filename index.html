@@ -10,37 +10,46 @@
 </head>
 <body>
   <header>
+    <div class="logo">
     <h1>
       <img src="/src/img/icone-logo.png" alt="Logo do Site">Gam3r Store</h1>
-    <nav>
-        <a href="inicio.html">Início</a>
-        <a href="categorias.html" class="menu">Cateforias
-          <ul class="sub-menu">
-            <li>Cadeiras</li>
-            <li>Monitores</li>
-            <li>Teclados</li>
-            <li>Headphones</li>
-          </ul>
-        </a>
-      </a>
-      <a href="suporte.html">Suporte</a>
-      <a href="pedidos.html">Pedidos</a>
-      <a href="login.html" id="login" class="menu">Login
-              <ul class="sub-menu">
-                <li><a href="perfil.html">Perfil</a></li>
-                <li><a href="notificacoes.html">Notificações</a></li>
-                <li><a href="conta.html">Conta</a></li>
-              </ul>
-        <a href="carrinho.html">
-            <button class="botao carrinho">🛒Carrinho</button>
-        </a>
-    </nav>
-    <div>
-      <form class="container pesquisa">
-        <input type="text" id="pesquisa" placeholder="Pesquise seu produto...">
-        <button>🔍</button>
-      </form>
+      <div class="barra-pesquisa">
+        <form class="container pesquisa">
+          <input type="text" id="pesquisa" placeholder="Pesquise seu produto...">
+          <button type="submit">🔍</button>
+        </form>
+      </div>
     </div>
+    <nav>
+      <ul>
+        <li class="links"><a href="inicio.html">Início</a></li>
+        <li>
+          <a href="categorias.html" class="menu">Cateforias
+          <ul class="sub-menu">
+              <li><a href="#">Cadeiras</a></li>
+              <li><a href="#">Monitores</a></li>
+              <li><a href="#">Teclados</a></li>
+              <li><a href="#">Headphones</a></li>
+          </ul>
+        </li>
+        <li><a href="suporte.html">Suporte</a></li>
+        <li></li><a href="pedidos.html">Pedidos</a>
+        <li>
+          <a href="login.html" id="login" class="menu">Login</a>
+          <ul class="sub-menu">
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="notificacoes.html">Notificações</a></li>
+            <li><a href="conta.html">Conta</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="carrinho.html">
+            <button class="botao carrinho">🛒Carrinho</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
   </header>
 
   <main>
