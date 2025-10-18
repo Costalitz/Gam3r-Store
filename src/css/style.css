@@ -20,18 +20,18 @@ button {
   background-color: #0b2252;
 }
 
-.menu ul{
+.menu ul {
   list-style: none;
-  magrin: 0;
+  margin: 0;
   padding: 0;
 }
 
-.menu li{
+.menu li {
   display: inline-block;
   position: relative;
 }
 
-.menu .submenu{
+.menu .submenu {
   display: none;
   position: absolute;
   top: 100%;
@@ -61,7 +61,7 @@ button {
   background: #0b2252;
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: transform 0.2s ease;
   text-align: center;
@@ -95,7 +95,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: none;
   align-items: center;
   justify-content: center;
