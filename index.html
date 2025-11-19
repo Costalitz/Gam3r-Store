@@ -1,103 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu E-commerce</title>
-<!--
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu E-commerce</title>
+    <!--
   <link rel="stylesheet" href="/src/css/style.css">
-  --> 
-</head>
-<body>
-  <header>
-    <div class="logo">
-    <h1>
-      <img src="/src/img/icone-logo.png" alt="Logo do Site">Gam3r Store</h1>
-      <div class="barra-pesquisa">
-        <form class="container pesquisa">
-          <input type="text" id="pesquisa" placeholder="Pesquise seu produto...">
-          <button type="submit">🔍</button>
-        </form>
+  --></head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>
+          <img src="/src/img/icone-logo.png" alt="Logo do Site" />Gam3r Store
+        </h1>
+        <div class="barra-pesquisa">
+          <form class="container pesquisa">
+            <input
+              type="text"
+              id="pesquisa"
+              placeholder="Pesquise seu produto..."
+            />
+            <button type="submit">🔍</button>
+          </form>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li class="links"><a href="inicio.html">Início</a></li>
+          <li>
+            <a href="categorias.html" class="menu">Cateforias</a>
+            <ul class="sub-menu">
+              <li><a href="#">Cadeiras</a></li>
+              <li><a href="#">Monitores</a></li>
+              <li><a href="#">Teclados</a></li>
+              <li><a href="#">Headphones</a></li>
+            </ul>
+          </li>
+          <li><a href="suporte.html">Suporte</a></li>
+          <li><a href="pedidos.html">Pedidos</a></li>
+          <li>
+            <a href="login.html" id="login" class="menu">Login</a>
+            <ul class="sub-menu">
+              <li><a href="perfil.html">Perfil</a></li>
+              <li><a href="notificacoes.html">Notificações</a></li>
+              <li><a href="conta.html">Conta</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="carrinho.html">
+              <button class="botao carrinho">🛒Carrinho</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="produtos">
+        <div
+          class="card"
+          data-nome="Teclado Gamer"
+          data-preco="150"
+          data-descricao="Maximize seu espaço na mesa com nosso teclado Redragon Fizz compacto 60%! Com cabo USB Tipo C removível para fácil transporte, keycaps duráveis em double shot injection e layout ABNT2, ele é perfeito para gamers que buscam praticidade e desempenho. Eleve seu jogo sem comprometer o estilo!"
+        >
+          <img src="/src/img/teclado.jpg" alt="Teclado Gamer" />
+          <h3>Teclado Gamer</h3>
+          <p>R$150,00</p>
+        </div>
+        <div
+          class="card"
+          data-nome="Cadeira Gamer"
+          data-preco="800"
+          data-descricao="Assento firme com apoio para cabeça e almofada para as costas unido a um encosto reclinável em até 135° permite conforto durante todo o dia, seja na hora de jogar ou enquanto descansa para recuperar suas energias. Possui apoio de braços com ajuste e rotação para dentro ou para fora. Design em couro sintético e fibra de carbono."
+        >
+          <img src="/src/img/cadeira.jpeg" alt="Cadeira Gamer" />
+          <h3>Cadeira Gamer</h3>
+          <p>R$800,00</p>
+        </div>
+        <div
+          class="card"
+          data-nome="Monitor Gamer"
+          data-preco="1500"
+          data-descricao="A tela UltraWide™ WQHD (resolução de 3440x1440, proporção 21:9) é ótima para jogos. Os jogadores podem ver mais informações na tela do jogo. Uma velocidade rápida de 160Hz permite que os jogadores vejam o próximo quadro rapidamente e faz com que a imagem apareça sem problemas. Os jogadores podem responder rapidamente aos adversários e mirar no alvo facilmente. Com a tecnologia FreeSync™ Premium, os jogadores experimentam movimentos contínuos e fluidos em jogos de alta resolução e ritmo acelerado. Esse recurso minimiza as imagens embaçadas e frames rasgados."
+        >
+          <img src="/src/img/monitor.jpeg" alt="Monitor Gamer" />
+          <h3>Monitor Gamer</h3>
+          <p>R$1500,00</p>
+        </div>
+        <div
+          class="card"
+          data-nome="Mouse Gamer"
+          data-preco="80"
+          data-descricao="Utilizando o chip de alta precisão PIXART 3212 do famoso fabricante, ele é mais rápido e consome menos energia, liberando todo o seu desempenho. Ele pode alcançar movimentos mais precisos, seja no escritório ou em atividades de lazer. Os três modos Bluetooth são amplamente compatíveis e podem ser usados ​​em computadores e tablets. Suporta redes sem fio 2.4G, Bluetooth 4.0 e Bluetooth 5.0, e pode ser alternado rapidamente entre três dispositivos."
+        >
+          <img src="/src/img/mouse.jpeg" alt="Mouse Gamer" />
+          <h3>Mouse Gamer</h3>
+          <p>R$80,00</p>
+        </div>
+        <div
+          class="card"
+          data-nome="Headset"
+          data-preco="200"
+          data-descricao="O headset JBL Quantum 100M2 é a escolha perfeita para gamers que buscam imersão total e conforto durante longas sessões de jogo! Equipado com a tecnologia JBL QuantumSOUND Signature, este headset coloca você no centro da ação, permitindo que você ouça os menores detalhes e sinta cada explosão com uma precisão incrível. A qualidade de som realista proporciona uma vantagem competitiva, fazendo com que cada cena se torne épica."
+        >
+          <img src="/src/img/headset.jpeg" alt="Headset" />
+          <h3>Headset</h3>
+          <p>R$200,00</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="fechar">&times;</span>
+        <img id="modal-img" src="" alt="Produto" />
+        <h3 id="modal-nome"></h3>
+        <p id="modal-preco"></p>
+        <p id="modal-descricao"></p>
+        <button id="adicionar">Adicionar ao Carrinho</button>
       </div>
     </div>
-    <nav>
-      <ul>
-        <li class="links"><a href="inicio.html">Início</a></li>
-        <li>
-          <a href="categorias.html" class="menu">Cateforias</a>
-          <ul class="sub-menu">
-            <li><a href="#">Cadeiras</a></li>
-            <li><a href="#">Monitores</a></li>
-            <li><a href="#">Teclados</a></li>
-            <li><a href="#">Headphones</a></li>
-          </ul>
-        </li>
-        <li><a href="suporte.html">Suporte</a></li>
-        <li><a href="pedidos.html">Pedidos</a></li>
-        <li>
-          <a href="login.html" id="login" class="menu">Login</a>
-          <ul class="sub-menu">
-            <li><a href="perfil.html">Perfil</a></li>
-            <li><a href="notificacoes.html">Notificações</a></li>
-            <li><a href="conta.html">Conta</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="carrinho.html">
-            <button class="botao carrinho">🛒Carrinho</button>
-          </a>
-        </li>
-      </ul>
-    </nav>
 
-  </header>
-
-  <main>
-    <section class="produtos">
-      <div class="card" data-nome="Teclado Gamer" data-preco="150">
-        <img src="/src/img/teclado.jpg" alt="Teclado Gamer">
-        <h3>Teclado Gamer</h3>
-        <p>R$150,00</p>
-        <p class="descricao">Maximize seu espaço na mesa com nosso teclado Redragon Fizz compacto 60%! Com cabo USB Tipo C removível para fácil transporte, keycaps duráveis em double shot injection e layout ABNT2, ele é perfeito para gamers que buscam praticidade e desempenho. Eleve seu jogo sem comprometer o estilo!</p>
-      </div>
-      <div class="card" data-nome="Cadeira Gamer" data-preco="800">
-        <img src="/src/img/cadeira.jpeg" alt="Cadeira Gamer">
-        <h3>Cadeira Gamer</h3>
-        <p>R$800,00</p>
-        <p class="descricao">Assento firme com apoio para cabeça e almofada para as costas unido a um encosto reclinável em até 135° permite conforto durante todo o dia, seja na hora de jogar ou enquanto descansa para recuperar suas energias. Possui apoio de braços com ajuste e rotação para dentro ou para fora. Design em couro sintético e fibra de carbono.</p>
-      </div>
-      <div class="card" data-nome="Monitor Gamer" data-preco="1500">
-        <img src="/src/img/monitor.jpeg" alt="Monitor Gamer">
-        <h3>Monitor Gamer</h3>
-        <p>R$1500,00</p>
-        <p class="descricao">A tela UltraWide™ WQHD (resolução de 3440x1440, proporção 21:9) é ótima para jogos. Os jogadores podem ver mais informações na tela do jogo. Uma velocidade rápida de 160Hz permite que os jogadores vejam o próximo quadro rapidamente e faz com que a imagem apareça sem problemas. Os jogadores podem responder rapidamente aos adversários e mirar no alvo facilmente. Com a tecnologia FreeSync™ Premium, os jogadores experimentam movimentos contínuos e fluidos em jogos de alta resolução e ritmo acelerado. Esse recurso minimiza as imagens embaçadas e frames rasgados.</p>
-      </div>
-      <div class="card" data-nome="Mouse Gamer" data-preco="80">
-        <img src="/src/img/mouse.jpeg" alt="Mouse Gamer">
-        <h3>Mouse Gamer</h3>
-        <p>R$80,00</p>
-        <p class="descricao">Utilizando o chip de alta precisão PIXART 3212 do famoso fabricante, ele é mais rápido e consome menos energia, liberando todo o seu desempenho. Ele pode alcançar movimentos mais precisos, seja no escritório ou em atividades de lazer. Os três modos Bluetooth são amplamente compatíveis e podem ser usados ​​em computadores e tablets. Suporta redes sem fio 2.4G, Bluetooth 4.0 e Bluetooth 5.0, e pode ser alternado rapidamente entre três dispositivos.</p>
-      </div>
-      <div class="card" data-nome="Headset" data-preco="200">
-        <img src="/src/img/headset.jpeg" alt="Headset">
-        <h3>Headset</h3>
-        <p>R$200,00</p>
-        <p class="descricao">O headset JBL Quantum 100M2 é a escolha perfeita para gamers que buscam imersão total e conforto durante longas sessões de jogo! Equipado com a tecnologia JBL QuantumSOUND Signature, este headset coloca você no centro da ação, permitindo que você ouça os menores detalhes e sinta cada explosão com uma precisão incrível. A qualidade de som realista proporciona uma vantagem competitiva, fazendo com que cada cena se torne épica.</p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Modal -->
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <span id="fechar">&times;</span>
-      <img id="modal-img" src="" alt="Produto">
-      <h3 id="modal-nome"></h3>
-      <p id="modal-preco"></p>
-      <button id="adicionar">Adicionar ao Carrinho</button>
-    </div>
-  </div>
-
-<!--  <script src="/src/script/script.js"></script> -->
-</body>
+    <!--  <script src="/src/script/script.js"></script> -->
+  </body>
 </html>
